@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import movieApi from "../../common/apis/movieApi";
 
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 export const fetchAsyncMovies = createAsyncThunk(
   
